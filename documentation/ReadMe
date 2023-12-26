@@ -1,0 +1,21 @@
+# CIARAN and CIARA - Complex Integral Algorithmically Reliable Artificial Network and Assistant
+
+## Overview
+
+CIARAN and CIARA are projects that aim to create a Digital Assistant, built in JS and leveraging the IBM Quantum Computer for certain tasks. These projects combine artificial intelligence, quantum computing, and natural language processing to provide a personalized and advanced assistant.
+
+## Features
+
+- **Natural Language Understanding**: CIARA is equipped with natural language processing capabilities, allowing it to understand and interpret user commands and questions.
+
+- **Quantum Computing Integration**: CIARAN leverages IBM Quantum to perform complex calculations and tasks that benefit from quantum computing, such as quantum simulations, cryptography, or optimization.
+
+- **Voice Interaction**: CIARA can communicate with users through voice commands, enabling hands-free interactions.
+
+- **Personalization**: The assistant can be customized to suit your preferences, including voice options and personalized responses.
+
+## Requirements
+
+- Node JS 
+- IBM Quantum Account (for CIARAN's quantum computing tasks)
+- Required Node libraries (specified in the project documentation)

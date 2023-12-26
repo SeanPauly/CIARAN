@@ -1,0 +1,53 @@
+CIARAN/
+│
+├── data/
+│   ├── input/
+│   │   ├── text/
+│   │   ├── audio/
+│   │   ├── images/
+│   │   └── ... (other input types)
+│   ├── processed/
+│   │   ├── text/
+│   │   ├── audio/
+│   │   ├── images/
+│   │   └── ... (processed data)
+│   └── models/
+│       ├── gender_prediction/
+│       └── ... (other trained models)
+│
+├── modules/
+│   ├── data_handling/
+│   │   ├── text_handling.py
+│   │   ├── audio_handling.py
+│   │   ├── image_handling.py
+│   │   └── ...
+│   ├── machine_learning/
+│   │   ├── model_training.py
+│   │   ├── model_evaluation.py
+│   │   ├── model_prediction.py
+│   │   └── ...
+│   ├── natural_language_processing/
+│   │   ├── voice_recognition.py
+│   │   ├── nlp_processing.py
+│   │   └── ...
+│   └── user_interaction/
+│       ├── user_preferences.py
+│       ├── user_interface.py
+│       └── ...
+│
+├── tests/
+│   ├── unit_tests/
+│   ├── integration_tests/
+│   └── ...
+│
+├── config/
+│   ├── settings.json
+│   ├── config.py
+│   └── ...
+│
+├── documentation/
+│   ├── user_guide.md
+│   ├── technical_documentation.md
+│   └── ...
+│
+└── main.py
