@@ -1,23 +1,21 @@
-import nltk
-import string
+# text_handling.py
+import pandas as pd
+import os
 
-def tokenize_text(text):
-    """
-    Tokenize the input text.
-    """
-    tokens = nltk.word_tokenize(text)
-    return tokens
+def load_text_data(file_path):
+    try:
+        data = pd.read_csv(file_path, encoding='latin1')  # Change 'latin1' to the appropriate encoding
+        return data
+    except UnicodeDecodeError as e:
+        print(f"UnicodeDecodeError: {e}")
+        return None
 
-def lowercase_tokens(tokens):
-    """
-    Convert tokens to lowercase.
-    """
-    lowercase_tokens = [token.lower() for token in tokens]
-    return lowercase_tokens
-
-def remove_punctuation(tokens):
-    """
-    Remove punctuation from tokens.
-    """
-    no_punctuation_tokens = [token for token in tokens if token not in string.punctuation]
-    return no_punctuation_tokens
+def process_text(text):
+    # Your text processing logic goes here
+    # For example, lowercase the text and remove punctuation
+    processed_text = text.lower()
+    processed_text = processed_text.replace('.', '')
+    processed_text = processed_text.replace(',', '')
+    # Add more text processing steps as needed
+    
+    return processed_text
